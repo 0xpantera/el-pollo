@@ -2,7 +2,7 @@ pub const EPOLL_CTL_ADD: i32 = 1;
 pub const EPOLLIN: i32 = 0x1;
 pub const EPOLLET: i32 = 1 << 31;
 
-#[link(name = "C")]
+#[link(name = "c")]
 extern "C" {
     ///Syscall to create an epoll queue
     ///`size` muste be >0
